@@ -8,6 +8,7 @@ import { SimilarityPanel } from '@/components/SimilarityPanel';
 import { PaletteEditor } from '@/components/PaletteEditor';
 import { LicenseVault } from '@/components/LicenseVault';
 import { SoftSignupPrompt } from '@/components/SoftSignupPrompt';
+import { GoogleAuth } from '@/components/GoogleAuth';
 import { LocalAsset } from '@/lib/storage/localState';
 
 type Tab = 'library' | 'similarity' | 'palettes' | 'vault';
@@ -90,12 +91,7 @@ export default function AppPage() {
               </svg>
               <span className="font-semibold">Indie Sample Finder</span>
             </Link>
-            <Link
-              href="/auth"
-              className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
-            >
-              Sign in
-            </Link>
+            <GoogleAuth />
           </div>
         </div>
       </header>

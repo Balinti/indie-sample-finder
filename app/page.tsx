@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { TryNowButton } from '@/components/TryNowButton';
 import { Pricing } from '@/components/Pricing';
+import { GoogleAuth } from '@/components/GoogleAuth';
 
 export default function Home() {
   return (
@@ -26,12 +27,7 @@ export default function Home() {
               <span className="font-semibold text-lg">Indie Sample Finder</span>
             </div>
             <div className="flex items-center gap-4">
-              <Link
-                href="/auth"
-                className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
-              >
-                Sign in
-              </Link>
+              <GoogleAuth />
               <TryNowButton />
             </div>
           </div>
